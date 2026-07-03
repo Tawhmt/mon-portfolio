@@ -1,9 +1,422 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Test Vercel</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taous Hamiti — Data Analyst</title>
+<meta name="description" content="Taous Hamiti — en recherche d'alternance Data Analyst. BI, ETL, dashboards, machine learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1>OK VERCEL</h1>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar" aria-label="Navigation principale">
+  <div class="navbar-inner">
+    <div class="navbar-glass">
+      <a href="#top" class="nav-logo">Taous<span>.</span></a>
+
+      <div class="nav-links">
+        <a href="#profil">Profil</a>
+        <a href="#competences">Compétences</a>
+        <a href="#experience">Expériences</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a href="#contact" class="nav-cta">Me contacter</a>
+
+      <button class="nav-burger" id="navBurger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMobilePanel">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="nav-mobile-panel" id="navMobilePanel">
+    <div class="nav-mobile-panel-inner">
+      <a href="#profil">Profil</a>
+      <a href="#competences">Compétences</a>
+      <a href="#experience">Expériences</a>
+      <a href="#formation">Formation</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+<header class="hero" id="top">
+  <div class="wrap hero-inner">
+
+    <div class="hero-content">
+
+      <span class="hero-tag">
+        Disponible en alternance • Septembre 2026
+      </span>
+
+      <h1 class="hero-title">
+        Taous Hamiti
+      </h1>
+
+      <h2 class="hero-subtitle">
+        À la recherche d'une alternance en Data Analysis
+      </h2>
+
+      <p class="hero-desc">
+        Curieuse, rigoureuse et passionnée par l'analyse de données, je souhaite contribuer à des projets où la donnée devient un véritable levier d'aide à la décision.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projets" class="btn btn-primary">
+          Découvrir mes projets
+        </a>
+
+    <a href="/cv.pdf" class="btn btn-outline" download>
+  Télécharger mon CV
+</a>
+      </div>
+
+    </div>
+
+    <div class="hero-photo-wrap">
+      <div class="hero-photo">
+        <img src="ChatGPT Image 25 mai 2026, 21_44_17.png"
+             alt="Portrait de Taous Hamiti">
+      </div>
+    </div>
+
+  </div>
+</header>
+<!-- ============ PROFIL ============ -->
+<section id="profil">
+  <div class="wrap">
+    <div class="section-head profil-head reveal">
+      <p class="eyebrow">À propos</p>
+      <h2 class="section-title">À la rencontre des systèmes et des données</h2>
+    </div>
+ 
+    <div class="profil-simple reveal">
+<p>
+Mon parcours est né d'une envie de comprendre comment les entreprises fonctionnent, puis comment leurs données peuvent devenir un véritable levier de décision. Après un Master en Systèmes d'Information Avancés, j'ai choisi de poursuivre en Master Data Engineer afin d'approfondir les aspects techniques liés au traitement, à l'analyse et à la valorisation des données. Aujourd'hui, je souhaite mettre cette double compétence au service d'une entreprise en alternance, en contribuant à des projets concrets où la donnée accompagne la prise de décision et crée de la valeur.</p>    </div>
+  </div>
+</section>
+<!-- ============ COMPETENCES ============ -->
+<section id="competences" class="tinted">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Stack technique</p>
+      <h2 class="section-title">Compétences</h2>
+      <p class="section-kicker">Un socle technique complet, de la base de données jusqu'à la restitution visuelle des résultats.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+        </div>
+        <h3>Data</h3>
+        <div class="tag-row">
+          <span class="tag">MySQL</span><span class="tag">Oracle</span><span class="tag">PostgreSQL</span>
+          <span class="tag">MongoDB</span><span class="tag">Pandas</span><span class="tag">Jupyter</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3>BI &amp; Reporting</h3>
+        <div class="tag-row">
+          <span class="tag">Power BI</span><span class="tag">Grafana</span><span class="tag">Pentaho ETL</span>
+          <span class="tag">icCube</span><span class="tag">DAX</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+        </div>
+        <h3>Machine Learning</h3>
+        <div class="tag-row">
+          <span class="tag">Scikit-learn</span><span class="tag">TensorFlow</span><span class="tag">Prophet</span>
+          <span class="tag">Matplotlib</span><span class="tag">Seaborn</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>Langages &amp; Web</h3>
+        <div class="tag-row">
+          <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">JavaScript</span>
+          <span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">HTML / CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.6-1.7A4 4 0 0 0 6.5 16"/><path d="M12 12v7M9 16l3 3 3-3"/></svg>
+        </div>
+        <h3>Cloud &amp; DevOps</h3>
+        <div class="tag-row">
+          <span class="tag">AWS S3</span><span class="tag">Docker</span><span class="tag">CI/CD</span>
+          <span class="tag">Git &amp; GitHub</span><span class="tag">Linux</span><span class="tag">Prometheus</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Soft Skills</h3>
+        <div class="tag-row">
+          <span class="tag">Esprit de synthèse</span><span class="tag">Travail en équipe</span>
+          <span class="tag">Autonomie</span><span class="tag">Hackathons</span><span class="tag">Pack Office</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Parcours professionnel</p>
+      <h2 class="section-title">Expériences</h2>
+      <p class="section-kicker">Une première immersion en entreprise, au cœur de projets de Business Intelligence à fort enjeu métier.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot" aria-hidden="true"></div>
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <div>
+              <span class="timeline-role">Stagiaire Business Intelligence (BI)</span> —
+              <span class="timeline-org">Sonatrach · ENI</span>
+            </div>
+            <span class="timeline-date">Avril – Juin 2025</span>
+          </div>
+          <ul>
+            <li>Modélisation de workflows métiers</li>
+            <li>Développement et configuration d'une base de données Oracle</li>
+            <li>Paramétrage d'ERP</li>
+            <li>Mise en place d'un entrepôt de données (ETL, Data Warehouse, DataMarts)</li>
+            <li>Mise en place de tableaux de bord et reporting avec Oracle BI OBIEE 12c</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORMATION ============ -->
+<section id="formation" class="tinted">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Cursus</p>
+      <h2 class="section-title">Formation</h2>
+    </div>
+
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <span class="edu-date">Sept 2025 – 2026</span>
+        <div class="edu-degree">Master 1 Data Engineer</div>
+        <div class="edu-school">Université Corse Pasquale Paoli</div>
+        <div class="edu-detail">Analyse, développement web</div>
+      </div>
+
+      <div class="edu-card reveal">
+        <span class="edu-date">2023 – 2025</span>
+        <div class="edu-degree">Master Systèmes d'Information Avancés</div>
+        <div class="edu-school">Université A. Mira de Béjaïa</div>
+        <div class="edu-detail">Sécurité &amp; interopérabilité, machine learning, réseaux et décisionnel</div>
+      </div>
+
+      <div class="edu-card reveal">
+        <span class="edu-date">2020 – 2023</span>
+        <div class="edu-degree">Licence en Informatique</div>
+        <div class="edu-school">Université A. Mira de Béjaïa</div>
+        <div class="edu-detail">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJETS ============ -->
+<section id="projets">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Réalisations académiques</p>
+      <h2 class="section-title">Projets</h2>
+      <p class="section-kicker">Des projets data de bout en bout : de la modélisation à la restitution, en solo ou en équipe.</p>
+    </div>
+
+    <div class="project-carousel reveal">
+      <div class="project-carousel-bar">
+        <p class="project-carousel-hint">Glisse horizontalement pour parcourir les projets</p>
+        <div class="project-carousel-controls" aria-label="Contrôles du carrousel projets">
+          <button type="button" class="project-carousel-btn" id="projectsPrev" aria-label="Projet précédent">←</button>
+          <button type="button" class="project-carousel-btn" id="projectsNext" aria-label="Projet suivant">→</button>
+        </div>
+      </div>
+
+      <div class="masonry project-track" id="projectsTrack">
+
+      <!-- Projet featured -->
+      <article class="proj-card reveal">
+        <div class="proj-body">
+          <span class="proj-badge-live">Déployé en prod</span>
+          <h3 class="proj-title">MedTrack — Plateforme de gestion intelligente d'un cabinet médical</h3>
+          <ul class="proj-desc">
+            <li>Gestion complète patients, rendez-vous, dossiers médicaux et facturation (Stripe)</li>
+            <li>4 modules IA : prédiction des no-show, prévision de la demande par spécialité (Prophet), prédiction de maladies chroniques, chatbot multi-rôles</li>
+            <li>4 interfaces dédiées (Admin, Assistant, Médecin, Patient) avec authentification JWT</li>
+          </ul>
+          <div class="proj-result">
+            <span>🎯</span>
+            <span><b>Mon rôle :</b> module de prédiction des no-show, interface Médecin et interface Administrateur.</span>
+          </div>
+          <div class="proj-tags">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MySQL</span>
+            <span class="tag">Scikit-learn</span><span class="tag">Prophet</span><span class="tag">FastAPI</span>
+            <span class="tag">Docker</span>
+          </div>
+          <div class="proj-links">
+            <a class="proj-btn" href="https://github.com/MehdiKarkache/MedTrack_Fullstack" target="_blank" rel="noopener">Code source</a>
+            <a class="proj-btn primary" href="https://medtrack-34-207-131-13.nip.io/" target="_blank" rel="noopener">Démo live</a>
+            <button type="button" class="proj-btn copy-btn" data-email="taoushamiti08@gmail.com">Copier mon email (accès démo)</button>
+          </div>
+          <p class="proj-team-note">Master 1 Data Engineer, Université de Corse · Identifiants de test envoyés sur simple demande par email.</p>
+        </div>
+      </article>
+
+      <!-- Projet 02 -->
+      <article class="proj-card compact reveal">
+        <div class="proj-body">
+          <h3 class="proj-title">Data Warehouse &amp; reporting bancaire</h3>
+          <ul class="proj-desc">
+            <li>Modèle de données en étoile sous PostgreSQL</li>
+            <li>Pipelines ETL avec contrôles qualité et règles d'intégrité</li>
+            <li>Dashboard interactif sous Power BI</li>
+          </ul>
+          <div class="proj-tags">
+            <span class="tag">PostgreSQL</span><span class="tag">ETL</span><span class="tag">Power BI</span><span class="tag">DAX</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Projet 03 -->
+      <article class="proj-card compact reveal">
+        <div class="proj-body">
+          <h3 class="proj-title">Modélisation de l'écosystème universitaire</h3>
+          <ul class="proj-desc">
+            <li>Base de données PostgreSQL / NoSQL / MongoDB</li>
+            <li>Entrepôt de données et pipeline ETL</li>
+            <li>Analyses OLAP et dashboards BI interactifs</li>
+          </ul>
+          <div class="proj-tags">
+            <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">OLAP</span><span class="tag">BI</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Projet 04 -->
+      <article class="proj-card compact reveal">
+        <div class="proj-body">
+          <h3 class="proj-title">Plateforme d'analyse des anomalies financières</h3>
+          <ul class="proj-desc">
+            <li>Suivi et analyse de données en temps réel (Power BI, Grafana)</li>
+            <li>Architecture cloud pour le pilotage des KPIs</li>
+            <li>Détection d'anomalies avec monitoring des performances</li>
+          </ul>
+          <div class="proj-tags">
+            <span class="tag">Grafana</span><span class="tag">Power BI</span><span class="tag">Cloud</span><span class="tag">Monitoring</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Projet 05 -->
+      <article class="proj-card compact reveal">
+        <div class="proj-body">
+          <h3 class="proj-title">Application web de prévention de pannes</h3>
+          <ul class="proj-desc">
+            <li>ML : classification (SVM, Random Forest), clustering, détection d'anomalies</li>
+            <li>Interface web avec dashboard et alertes temps réel</li>
+            <li>Méthodologie Agile / Scrum, suivi sur Jira</li>
+          </ul>
+          <div class="proj-tags">
+            <span class="tag">Scikit-learn</span><span class="tag">TensorFlow</span><span class="tag">SQL</span><span class="tag">Jira</span>
+          </div>
+        </div>
+      </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LANGUES / ATOUTS ============ -->
+<section id="atouts" class="tinted">
+  <div class="wrap two-col-grid">
+    <div class="info-card reveal">
+      <h3>Langues</h3>
+      <div class="lang-row">
+        <div class="lang-row-top">
+          <span>Français</span>
+          <span class="level">Courant</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" data-width="95%"></div></div>
+      </div>
+      <div class="lang-row">
+        <div class="lang-row-top">
+          <span>Anglais</span>
+          <span class="level">Intermédiaire</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" data-width="60%"></div></div>
+      </div>
+    </div>
+
+    <div class="info-card reveal">
+      <h3>Atouts</h3>
+      <ul class="atout-list">
+        <li>Esprit de synthèse / capacité d'adaptation</li>
+        <li>Capacité à travailler en équipe / autonomie</li>
+        <li>Challenges d'innovation</li>
+        <li>Hackathons universitaires</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="contact-section">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <h2>Travaillons ensemble.</h2>
+      <p>Ouverte à toute alternance Data Analyst à partir de la rentrée 2026 — rythme 1 semaine entreprise / 1 semaine formation.</p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:taoushamiti08@gmail.com">Écrire à Taous</a>
+        <a class="btn btn-outline" href="tel:+33743584385">07 43 58 43 85</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/taous-hamiti-021501398/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-links">
+      <a href="mailto:taoushamiti08@gmail.com">Email</a>
+      <a href="tel:+33743584385">Téléphone</a>
+      <a href="https://www.linkedin.com/in/taous-hamiti-021501398/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="footer-note">© 2026 Taous Hamiti — Île-de-France</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
