@@ -225,7 +225,7 @@ Mon parcours est né d'une envie de comprendre comment les entreprises fonctionn
         <span class="edu-date">Sept 2025 – 2026</span>
         <div class="edu-degree">Master 1 Data Engineer</div>
         <div class="edu-school">Université Corse Pasquale Paoli</div>
-        <div class="edu-detail">Analyse, développement web</div>
+        <div class="edu-detail">,Data engineering, Analyse, développement web</div>
       </div>
 
       <div class="edu-card reveal">
@@ -244,46 +244,59 @@ Mon parcours est né d'une envie de comprendre comment les entreprises fonctionn
     </div>
   </div>
 </section>
-
-<!-- ============ PROJETS ============ -->
+<!-- ============ PROJETS (accordéon) ============ -->
 <section id="projets">
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">Réalisations académiques</p>
       <h2 class="section-title">Projets</h2>
-      <p class="section-kicker">Des projets data de bout en bout : de la modélisation à la restitution, en solo ou en équipe.</p>
+      <p class="section-kicker">Clique sur un projet pour voir l'objectif, l'architecture et la stack utilisée.</p>
     </div>
 
-    <div class="project-carousel reveal">
-      <div class="project-carousel-bar">
-        <p class="project-carousel-hint">Glisse horizontalement pour parcourir les projets</p>
-        <div class="project-carousel-controls" aria-label="Contrôles du carrousel projets">
-          <button type="button" class="project-carousel-btn" id="projectsPrev" aria-label="Projet précédent">←</button>
-          <button type="button" class="project-carousel-btn" id="projectsNext" aria-label="Projet suivant">→</button>
-        </div>
-      </div>
+    <div class="proj-accordion reveal">
 
-      <div class="masonry project-track" id="projectsTrack">
+      <!-- Projet 01 — MedTrack (featured) -->
+      <details class="proj-acc-item featured" open>
+        <summary class="proj-acc-summary">
+          <div class="proj-acc-summary-main">
+            <span class="proj-badge-live">Déployé en prod</span>
+            <h3 class="proj-acc-title">MedTrack — Plateforme de gestion intelligente d'un cabinet médical</h3>
+            <div class="proj-tags">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MySQL</span>
+              <span class="tag">Scikit-learn</span><span class="tag">Prophet</span><span class="tag">FastAPI</span><span class="tag">Docker</span>
+            </div>
+          </div>
+          <span class="proj-acc-chevron" aria-hidden="true">⌄</span>
+        </summary>
 
-      <!-- Projet featured -->
-      <article class="proj-card reveal">
-        <div class="proj-body">
-          <span class="proj-badge-live">Déployé en prod</span>
-          <h3 class="proj-title">MedTrack — Plateforme de gestion intelligente d'un cabinet médical</h3>
-          <ul class="proj-desc">
-            <li>Gestion complète patients, rendez-vous, dossiers médicaux et facturation (Stripe)</li>
-            <li>4 modules IA : prédiction des no-show, prévision de la demande par spécialité (Prophet), prédiction de maladies chroniques, chatbot multi-rôles</li>
-            <li>4 interfaces dédiées (Admin, Assistant, Médecin, Patient) avec authentification JWT</li>
-          </ul>
-          <div class="proj-result">
-            <span>🎯</span>
-            <span><b>Mon rôle :</b> module de prédiction des no-show, interface Médecin et interface Administrateur.</span>
+        <div class="proj-acc-body">
+          <div class="proj-acc-block">
+            <h4>Objectif</h4>
+            <ul class="proj-bullets">
+              <li>Plateforme centralisée : patients, rendez-vous, dossiers médicaux, facturation</li>
+              <li>4 modules IA : no-show, prévision de la demande, maladies chroniques, chatbot multi-rôles</li>
+              <li>4 interfaces dédiées (Admin, Assistant, Médecin, Patient) avec authentification JWT</li>
+            </ul>
           </div>
-          <div class="proj-tags">
-            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MySQL</span>
-            <span class="tag">Scikit-learn</span><span class="tag">Prophet</span><span class="tag">FastAPI</span>
-            <span class="tag">Docker</span>
+
+          <div class="proj-acc-block">
+            <h4>Mon rôle</h4>
+            <ul class="proj-bullets">
+              <li>Module de prédiction des absences (No-Show) , pipeline Python intégré au backend Node.js</li>
+              <li>Interface Médecin : dashboard, calendrier, dossiers médicaux, prédictions</li>
+              <li>Interface Administrateur : gestion des utilisateurs, supervision de l'activité</li>
+            </ul>
           </div>
+
+          <div class="proj-acc-block">
+            <h4>Stack technique</h4>
+            <div class="proj-tags">
+              <span class="tag">React / Vite</span><span class="tag">Node.js / Express</span><span class="tag">MySQL / Sequelize</span>
+              <span class="tag">JWT</span><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span>
+              <span class="tag">Prophet</span><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">Stripe</span>
+            </div>
+          </div>
+
           <div class="proj-links">
             <a class="proj-btn" href="https://github.com/MehdiKarkache/MedTrack_Fullstack" target="_blank" rel="noopener">Code source</a>
             <a class="proj-btn primary" href="https://medtrack-34-207-131-13.nip.io/" target="_blank" rel="noopener">Démo live</a>
@@ -291,73 +304,198 @@ Mon parcours est né d'une envie de comprendre comment les entreprises fonctionn
           </div>
           <p class="proj-team-note">Master 1 Data Engineer, Université de Corse · Identifiants de test envoyés sur simple demande par email.</p>
         </div>
-      </article>
+      </details>
 
       <!-- Projet 02 -->
-      <article class="proj-card compact reveal">
-        <div class="proj-body">
-          <h3 class="proj-title">Data Warehouse &amp; reporting bancaire</h3>
-          <ul class="proj-desc">
-            <li>Modèle de données en étoile sous PostgreSQL</li>
-            <li>Pipelines ETL avec contrôles qualité et règles d'intégrité</li>
-            <li>Dashboard interactif sous Power BI</li>
-          </ul>
-          <div class="proj-tags">
-            <span class="tag">PostgreSQL</span><span class="tag">ETL</span><span class="tag">Power BI</span><span class="tag">DAX</span>
+      <details class="proj-acc-item">
+        <summary class="proj-acc-summary">
+          <div class="proj-acc-summary-main">
+            <h3 class="proj-acc-title">Data Warehouse &amp; reporting bancaire</h3>
+            <div class="proj-tags">
+              <span class="tag">PostgreSQL</span><span class="tag">ETL</span><span class="tag">Power BI</span><span class="tag">DAX</span>
+            </div>
+          </div>
+          <span class="proj-acc-chevron" aria-hidden="true">⌄</span>
+        </summary>
+        <div class="proj-acc-body">
+          <div class="proj-acc-block">
+            <h4>Détail</h4>
+            <ul class="proj-bullets">
+              <li>Modèle de données en étoile sous PostgreSQL</li>
+              <li>Pipelines ETL, contrôles qualité, règles d'intégrité</li>
+              <li>Mesures analytiques : KPIs, DAX</li>
+              <li>Dashboard interactif Power BI</li>
+            </ul>
+          </div>
+          <div class="proj-acc-block">
+            <h4>Stack technique</h4>
+            <div class="proj-tags">
+              <span class="tag">PostgreSQL</span><span class="tag">ETL</span><span class="tag">Power BI</span><span class="tag">DAX</span>
+            </div>
           </div>
         </div>
-      </article>
+      </details>
 
       <!-- Projet 03 -->
-      <article class="proj-card compact reveal">
-        <div class="proj-body">
-          <h3 class="proj-title">Modélisation de l'écosystème universitaire</h3>
-          <ul class="proj-desc">
-            <li>Base de données PostgreSQL / NoSQL / MongoDB</li>
-            <li>Entrepôt de données et pipeline ETL</li>
-            <li>Analyses OLAP et dashboards BI interactifs</li>
-          </ul>
-          <div class="proj-tags">
-            <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">OLAP</span><span class="tag">BI</span>
+      <details class="proj-acc-item">
+        <summary class="proj-acc-summary">
+          <div class="proj-acc-summary-main">
+            <h3 class="proj-acc-title">Modélisation de l'écosystème universitaire</h3>
+            <div class="proj-tags">
+              <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">Pentaho</span><span class="tag">icCube</span><span class="tag">Power BI</span>
+            </div>
+          </div>
+          <span class="proj-acc-chevron" aria-hidden="true">⌄</span>
+        </summary>
+        <div class="proj-acc-body">
+          <div class="proj-acc-block">
+            <h4>Détail</h4>
+            <ul class="proj-bullets">
+              <li>Base relationnelle PostgreSQL , modélisation, contraintes d'intégrité, optimisation SQL</li>
+              <li>Stockage NoSQL MongoDB  ,données semi-structurées, indexation</li>
+              <li>Data Warehouse en schéma étoile + pipeline ETL avec Pentaho Data Integration</li>
+              <li>Analyses OLAP avec icCube ,cubes, hiérarchies, mesures</li>
+              <li>Dashboards Power BI ,DAX, KPIs, visualisations dynamiques</li>
+            </ul>
+          </div>
+          <div class="proj-acc-block">
+            <h4>Environnement technique</h4>
+            <div class="proj-tags">
+              <span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">Pentaho</span><span class="tag">icCube</span>
+              <span class="tag">Power BI</span><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Faker</span>
+              <span class="tag">Docker</span><span class="tag">pgAdmin</span>
+            </div>
           </div>
         </div>
-      </article>
+      </details>
 
-      <!-- Projet 04 -->
-      <article class="proj-card compact reveal">
-        <div class="proj-body">
-          <h3 class="proj-title">Plateforme d'analyse des anomalies financières</h3>
-          <ul class="proj-desc">
-            <li>Suivi et analyse de données en temps réel (Power BI, Grafana)</li>
-            <li>Architecture cloud pour le pilotage des KPIs</li>
-            <li>Détection d'anomalies avec monitoring des performances</li>
-          </ul>
-          <div class="proj-tags">
-            <span class="tag">Grafana</span><span class="tag">Power BI</span><span class="tag">Cloud</span><span class="tag">Monitoring</span>
+      <!-- Projet 04 — AnomalyGuard -->
+      <details class="proj-acc-item">
+        <summary class="proj-acc-summary">
+          <div class="proj-acc-summary-main">
+            <span class="proj-badge-live">Architecture cloud complète</span>
+            <h3 class="proj-acc-title"> Détection d'anomalies financières</h3>
+            <div class="proj-tags">
+              <span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span>
+              <span class="tag">AWS</span><span class="tag">Docker</span><span class="tag">Grafana</span>
+            </div>
+          </div>
+          <span class="proj-acc-chevron" aria-hidden="true">⌄</span>
+        </summary>
+        <div class="proj-acc-body">
+          <div class="proj-acc-block">
+            <h4>Objectif</h4>
+            <ul class="proj-bullets">
+              <li> Concevoir une architecture full-stack scalable</li>
+              <li> Mettre en place une chaîne CI/CD automatisée</li>
+              <li>Déployer l'application sur une infrastructure cloud</li>
+              <li>Assurer la conteneurisation et la reproductibilité</li>
+              <li>Implémenter le monitoring et l'observabilité</li>
+              <li>Exploiter les données pour aider à la décision</li>
+            </ul>
+          </div>
+
+          <div class="proj-acc-block">
+            <h4>Architecture</h4>
+            <ul class="proj-bullets">
+              <li>Frontend React + Vite : dashboard, transactions, alertes</li>
+              <li>Backend FastAPI (Python) : routes, moteur de détection, simulateur</li>
+              <li>Base PostgreSQL : transactions et alertes</li>
+              <li>Moteur de détection à base de règles pondérées — score de risque ≥ 0.4 déclenche une anomalie</li>
+              <li>Simulateur : 200 transactions générées au démarrage, 7 % d'anomalies intentionnelles</li>
+              <li>Alertes classées Critical / High / Medium, traitées par les analystes via le dashboard</li>
+            </ul>
+          </div>
+
+          <div class="proj-acc-block">
+            <h4>CI/CD &amp; Cloud</h4>
+            <ul class="proj-bullets">
+              <li>Pipeline GitHub Actions : tests pytest, build React, build Docker, push ECR, déploiement EC2</li>
+              <li>Infrastructure AWS : EC2, RDS PostgreSQL, ECR, S3, CloudWatch</li>
+              <li>Monitoring Prometheus + Grafana : SLO 99.5 %, latence P95 &lt; 500 ms, error budget</li>
+              <li>Data Analytics : 3 analyses SQL, dashboard Power BI connecté à PostgreSQL</li>
+            </ul>
+          </div>
+
+          <div class="proj-acc-block">
+            <h4>Stack technique</h4>
+            <div class="proj-tags">
+              <span class="tag">React / Vite</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span>
+              <span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">AWS EC2</span>
+              <span class="tag">AWS RDS</span><span class="tag">AWS ECR</span><span class="tag">AWS S3</span>
+              <span class="tag">CloudWatch</span><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">Power BI</span>
+            </div>
           </div>
         </div>
-      </article>
+      </details>
 
       <!-- Projet 05 -->
-      <article class="proj-card compact reveal">
-        <div class="proj-body">
-          <h3 class="proj-title">Application web de prévention de pannes</h3>
-          <ul class="proj-desc">
-            <li>ML : classification (SVM, Random Forest), clustering, détection d'anomalies</li>
-            <li>Interface web avec dashboard et alertes temps réel</li>
-            <li>Méthodologie Agile / Scrum, suivi sur Jira</li>
-          </ul>
-          <div class="proj-tags">
-            <span class="tag">Scikit-learn</span><span class="tag">TensorFlow</span><span class="tag">SQL</span><span class="tag">Jira</span>
+      <details class="proj-acc-item">
+        <summary class="proj-acc-summary">
+          <div class="proj-acc-summary-main">
+            <h3 class="proj-acc-title">Prédiction de pannes par séries temporelles (LSTM)</h3>
+            <div class="proj-tags">
+              <span class="tag">Python</span><span class="tag">LSTM</span><span class="tag">Keras/TensorFlow</span><span class="tag">MySQL</span>
+            </div>
+          </div>
+          <span class="proj-acc-chevron" aria-hidden="true">⌄</span>
+        </summary>
+        <div class="proj-acc-body">
+          <div class="proj-acc-block">
+            <h4>Détail</h4>
+            <ul class="proj-bullets">
+              <li>Modèle LSTM entraîné sur séries temporelles (Python, Pandas)</li>
+              <li>Prétraitement, création de séquences, stockage MySQL</li>
+              <li>Optimisation via feature engineering et réglage des hyperparamètres</li>
+              <li>Interface web, alertes et indicateurs de maintenance</li>
+              <li>Méthodologie Scrum</li>
+            </ul>
+          </div>
+          <div class="proj-acc-block">
+            <h4>Environnement technique</h4>
+            <div class="proj-tags">
+              <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span>
+              <span class="tag">LSTM (Keras/TensorFlow)</span><span class="tag">MySQL</span><span class="tag">HTML/CSS/JS</span>
+            </div>
           </div>
         </div>
-      </article>
+      </details>
 
-      </div>
+      <!-- Projet 06 -->
+      <details class="proj-acc-item">
+        <summary class="proj-acc-summary">
+          <div class="proj-acc-summary-main">
+            <span class="proj-badge-live">Hackathon EDF Corse</span>
+            <h3 class="proj-acc-title">Gestion du cycle de vie des concentrateurs</h3>
+            <div class="proj-tags">
+              <span class="tag">React.js</span><span class="tag">PHP</span><span class="tag">MySQL</span>
+            </div>
+          </div>
+          <span class="proj-acc-chevron" aria-hidden="true">⌄</span>
+        </summary>
+        <div class="proj-acc-body">
+          <div class="proj-acc-block">
+            <h4>Détail</h4>
+            <ul class="proj-bullets">
+              <li>Traçabilité du cycle de vie des équipements : réception, stockage, transfert, pose, dépose, retour</li>
+              <li>Application full-stack : front React.js, API REST PHP</li>
+              <li>Modélisation MySQL pour le suivi des équipements</li>
+              <li>Travail en équipe : flux de données, versionnement Git</li>
+            </ul>
+          </div>
+          <div class="proj-acc-block">
+            <h4>Environnement technique</h4>
+            <div class="proj-tags">
+              <span class="tag">React.js</span><span class="tag">PHP</span><span class="tag">API REST</span>
+              <span class="tag">MySQL</span><span class="tag">phpMyAdmin</span><span class="tag">Git</span>
+            </div>
+          </div>
+        </div>
+      </details>
+
     </div>
   </div>
 </section>
-
 <!-- ============ LANGUES / ATOUTS ============ -->
 <section id="atouts" class="tinted">
   <div class="wrap two-col-grid">
